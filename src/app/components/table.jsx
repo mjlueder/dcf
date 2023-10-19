@@ -8,21 +8,22 @@ const projects = [
 
 export default function Table() {
   return (
-    <>  
-      <table> 
+    <div className="p-4">  
+      <p>DCF Funded Projects</p>
+      <table className="border-separate border-spacing-2 border border border-slate-500"> 
         <tr>
-          <th>Title</th>
-          <th>Species</th>
-          <th>Country</th>
+          <th className="p-4 border border-slate-600">Country</th>
+          <th className="p-4 border border-slate-600">Title</th>
+          <th className="p-4 border border-slate-600">Species</th>
         </tr>
         {projects.map((project, i) => (
           <tr key={i}>
-            <td>{project.title}</td>
-            <td>{project.species}</td>
-            <td>{project.country}</td>
+            <td className="p-4 border border-slate-700">{project.country}</td>
+            <td className="p-4 border border-slate-700">{project.title}</td>
+            <td className="p-4 border border-slate-700">{project.species}</td>
           </tr>
         ))}
       </table>
-    </>
+    </div>
   )
 }
