@@ -9,7 +9,7 @@ const projects = [
 export default function Table() {
   return (
     <div className="p-4">  
-      <p>DCF Funded Projects</p>
+      <p className="p-4 text-center">DCF Funded Projects</p>
       <table className="border-separate border-spacing-2 border border border-slate-500"> 
         <tr>
           <th className="p-4 border border-slate-600">Country</th>

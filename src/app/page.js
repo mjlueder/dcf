@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <div> 
-        <p>DCFFFFF</p>
+        <p className="text-center p-8">Disney Conservation Fund</p>
         <MapChart />
         <Table></Table>
       </div>
