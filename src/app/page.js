@@ -18,9 +18,16 @@ export default function Home() {
     <main>
       <div> 
         <p className="text-center p-8">Disney Conservation Fund</p>
-        <Link href='https://impact.disney.com/environment/conservation/' target='_blank'>About DCF</Link>
+        <Link href='https://impact.disney.com/environment/conservation/' target='_blank' className="text-center p-8">About DCF</Link>
         <MapChart />
         <Table></Table>
+        <div>
+          <from>
+            <div className="flex items-center justify-center">
+
+            </div>
+          </from>
+        </div>
       </div>
     </main>
   )
