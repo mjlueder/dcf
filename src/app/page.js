@@ -29,19 +29,19 @@ export default function Home() {
           <from>
             <div className="flex items-center justify-center">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name"></input>
+              <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name"></input>
             </div>
             <div className="flex items-center justify-center">
               <label htmlFor="email">email</label>
-              <input type="text" name="email" id="email"></input>
+              <input value={email} onChange={e => setEmail(e.target.value)} type="text" name="email" id="email"></input>
             </div>
             <div className="flex items-center justify-center">
               <label htmlFor="phone">phone</label>
-              <input type="text" name="phone" id="phone"></input>
+              <input value={phone} onChange={e => setPhone(e.target.value)} type="text" name="phone" id="phone"></input>
             </div>
             <div className="flex items-center justify-center">
               <label htmlFor="message">Message</label>
-              <textarea type="text" name="message" id="message"></textarea>
+              <textarea value={message} onChange={e => setMessage(e.target.value)} type="text" name="message" id="message"></textarea>
             </div>
           </from>
         </div>
