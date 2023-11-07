@@ -8,10 +8,10 @@ export default function Home() {
 
   const [projectInfo, setProjectInfo] = useState([])
   const [name, setName] = useState('')
-  const [name, setName] = useState('')
-  const [name, setName] = useState('')
-  const [name, setName] = useState('')
-  
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+
   useEffect(() => {
     const getData = async() => {
       const query = await fetch
